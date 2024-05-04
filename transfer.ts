@@ -42,6 +42,7 @@ const sendSolInstruction = SystemProgram.transfer({
 
 transaction.add(sendSolInstruction);
 
+
 const signature = await sendAndConfirmTransaction(connection, transaction, [senderKeypair,]);
 
 console.log(`Finished! Sent ${LAMPORTS_TO_SEND} to the address ${toPubkey}.`);
