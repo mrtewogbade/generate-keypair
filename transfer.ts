@@ -35,6 +35,7 @@ const transaction = new Transaction();
 const LAMPORTS_TO_SEND = 5000;
 
 const sendSolInstruction = SystemProgram.transfer({
+
     fromPubkey: senderKeypair.publicKey,
     toPubkey,
     lamports: LAMPORTS_TO_SEND,
